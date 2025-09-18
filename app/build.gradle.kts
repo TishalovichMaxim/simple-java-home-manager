@@ -18,14 +18,22 @@ dependencies {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(24)
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
+val sjhmMainClass = "by.tishalovichm.sjhm.App"
+
 application {
-    mainClass = "by.tishalovichm.sjhm.App"
+    mainClass = sjhmMainClass
 }
 
 tasks.named<Test>("test") {
     useJUnitPlatform()
+}
+
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = sjhmMainClass
+    }
 }

@@ -15,7 +15,7 @@ public class Service {
     @SneakyThrows
     public List<String> listAllJdks() {
         Path userHomePath = FilesUtils.getUserHomePath();
-        Path jdksFolder = userHomePath.resolve(Consts.FOLDER, Consts.JDKS_FOLDER);
+        Path jdksFolder = userHomePath.resolve(Consts.FOLDER).resolve(Consts.JDKS_FOLDER);
 
         if (!Files.exists(jdksFolder)) {
             Path parentFolder = jdksFolder.getParent();
