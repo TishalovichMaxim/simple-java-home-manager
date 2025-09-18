@@ -8,17 +8,17 @@
     jdk3
 
     ~/.sjhm/jdks> sjhm ls
-    0 - jdk1
-    1 - jdk2
-    2 - jdk3
+    1 - jdk1
+    2 - jdk2
+    3 - jdk3
     
 ## Setting active jdk
 
     ~/.sjhm/jdks> sjhm ls
-    0 - jdk1
-    1 - jdk2
-    2 - jdk3
-    ~/> sjhm set 1
+    1 - jdk1
+    2 - jdk2
+    3 - jdk3
+    ~/> sjhm set 2
 
 ---
 
