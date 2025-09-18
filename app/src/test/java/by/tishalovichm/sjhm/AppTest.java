@@ -1,4 +1,4 @@
-package org.example;
+package by.tishalovichm.sjhm;
 
 import org.junit.jupiter.api.Test;
 
