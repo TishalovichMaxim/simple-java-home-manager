@@ -29,7 +29,3 @@ application {
 tasks.named<Test>("test") {
     useJUnitPlatform()
 }
-
-tasks.register<Exec>("myTask") {
-    commandLine("cmd", "/C", "mkdir", "DELETE_ME")
-}
